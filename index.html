@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1400px">
+    <link rel="stylesheet" type="text/css" href="sourse/css/style.css">
+    <script src="https://kit.fontawesome.com/a7eb041117.js" crossorigin="anonymous"></script>
+    <title>PUNK</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo"></div>
+            <div class="top_right">
+                <a href="#features">Особенности</a>
+                <a href="#about_us">О нас</a>
+                <a href="#prise">Прайс</a>
+                <a href="#comment">Обзоры</a>
+                <a href="#contact">Контакт</a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <div class="login">
+                <div class="logo"></div>
+                <div class="comany">
+                    <h1>современное решение для вашего дома или офиса</h1>
+                </div>
+                <div class="long"></div>
+                <div class="Lorem">
+                    <p>
+                        Результат работы квалифицированных специалистов «PUNK» на высоте с 2000 года.
+                         Установка и обслуживание оригинальных и технологичных конструкций на необходимой высоте и
+                          даже сложной поверхности всегда надежны и безопасны.
+                    </p>
+                </div>
+            </div>
+            <div class="block">
+                <div class="block_top">
+                    <h2>Прочуствуй <span>неон</span> Уже Сегодня</h2>
+                </div>
+                <div class="inputs">
+                    <form action="inputs">
+                        <div class="block_probel_top">
+                            <input type="text" name="name_user" placeholder="Имя">
+                            <input type="email" name="emaili" placeholder="Email">
+                            <input type="password" name="password_user" placeholder="Пароль">
+                        </div>
+                    </form>
+                </div>
+                <div class="block_bottom">
+                    <form action="start">
+                        <input type="submit" name="start" id="starts">
+                        <label for="starts">Начать</label>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="bar">
+        <div class="container">
+            <h2 class="bar_head">Социальные сети</h2>
+            <p class="bar_head_text">
+                Если есть вопросы или вас что-то заинтересовало, ищите нас в следующих сетях! 
+            </p>
+            <div class="bar_freim">
+                <a href="https://www.google.ru/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://www.google.ru/"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.google.ru/"><i class="fab fa-google-plus-g"></i></a>
+                <a href="https://www.google.ru/"><i class="fab fa-product-hunt"></i></a>
+                <a href="https://www.google.ru/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.google.ru/"> <i class="fas fa-wave-square"></i></a>
+                <a href="https://www.google.ru/"><i class="fas fa-satellite-dish"></i></a>
+
+            </div>
+        </div>
+    </section>
+    <section class="tabs" id="features">
+        <div class="container">
+            <div class="tabs_left">
+
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    <ul>
+                        <li>
+
+                            <input type="radio" name="tab" id="tab_cub_1" checked="" onclick="tab1()">
+                            <label for="tab_cub_1">tab1</label>
+
+                        </li>
+                        <li>
+                            <input type="radio" name="tab" id="tab_cub_2" onclick="tab2()">
+                            <label for="tab_cub_2">tab2</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="tab" id="tab_cub_3" onclick="tab3()">
+                            <label for="tab_cub_3">tab3</label>
+                        </li>
+                    </ul>
+                </form>
+                <div class="tabs">
+                    <div id="box1">
+                        <h2>ГАРАНТИЯ 2 ГОДА</h2>
+                        <p>Мы уверены в качестве предоставляемых услуг и долговечности конструкций, поэтому предлагаем гарантию на изделие в течение 730 дней – 2 года после установки рекламной конструкции.</p>
+                        <p>Всегда на связи, всегда открыты для вопросов и отчетов по текущей работе – все наши сотрудники, компетентные специалисты.</p>
+                    </div>
+                    <div id="box2">
+                        <h2>КАЧЕСТВО МАТЕРИАЛОВ</h2>
+                        <p>Вы можете не переживать за качество нашей продукции, так как:</p>
+                        <p>Ваш заказ будет служить вам долго и красиво, ведь мы закупаем только качественные материалы, всемирно известных торговых марок и у проверенных поставщиков, следим за тенденциями рынка и пополнением ассортимента.</p>
+                    </div>
+                    <div id="box3">
+                        <h2>СОГЛАСОВАНИЕ РАБОТНЫХ ДЕЙСТВИЙ</h2>
+                        <p>
+                            С нашей компанией вы можете не боятся непредвиденных обстоятельсв, которые могут возникнуть в процессе работы.
+                        </p>
+                        <p>Установка наружных конструкций иногда требует разрешения со стороны городских властей.
+                            С нашей компанией «PUNK» проектирование и согласование вывесок — «бумажный» процесс не затронет вас и ваше время.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <script type="text/javascript">
+                function tab1() {
+                    document.getElementById("box1").style.display = "block";
+                    document.getElementById("box2").style.display = "none";
+                    document.getElementById("box3").style.display = "none";
+                }
+                function tab2() {
+                    document.getElementById("box1").style.display = "none";
+                    document.getElementById("box2").style.display = "block";
+                    document.getElementById("box3").style.display = "none";
+                }
+                function tab3() {
+                    document.getElementById("box1").style.display = "none";
+                    document.getElementById("box2").style.display = "none";
+                    document.getElementById("box3").style.display = "block";
+                }      
+            </script>
+
+            <div class="city_right"></div>
+        </div>
+    </section>
+    <section class="Sub_list">
+        <div class="container">
+            <div class="photo_1"><img src="img/SITY_1.png" alt=""></div>
+            <div class="imga_text_1">
+                <h2> Полный цикл работ</h2>
+                <div class="long_violete"></div>
+                <div class="up_title"> <i class="icon-up"></i></div>
+                <div class="bottom_title"> <i class="icon-bottomsss"></i></div>
+                <p>
+                    Комплексные услуги по всему миру — приоритет компании «PUNK». Закажите услугу, и мобильная бригада оперативно выедет на замер и произведет все необходимые расчеты в любой точке мира.
+                </p>
+                <ul class="ul_title">
+                    <li>
+                        <h3>Полный</h3>Сделав заказ именно у нас вы решите все свои неоновые задачи буквально, в несколько кликов.
+                    </li>
+                    <li>
+                        <h3>Цикл</h3> Наши ресурсы позволяют реализовать абсолютно разные по сложности проекты: будь то лёгкая работа или крупный проект.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="standard_pictures">
+        <div class="container">
+            <div class="imga_text_2">
+                <h2>Стандарты неонового ремесла</h2>
+                <div class="long"></div>
+                <div class="texts">
+                    <p>На сегодняшний момент улицы пестрят многочисленными вывесками. Часть вывесок делаются
+                         по определенным стандартам (так называемый бренд бук).</p>
+                    <p>Но большая часть вывесок изготавливается по своим уникальным технологиям и стандартам, в единичном исполнении, по пожеланиям заказчика.</p>
+                </div>
+                <div class="photo_2"><img src="img/SITY_2.png" alt=""></div>
+            </div>
+    </section>
+    <section class="why_awesome" id="about_us">
+        <div class="container">
+            <div class="comany">
+                <h2>Почему именно мы?</h2>
+                <div class="long"></div>
+                <p>У нас много плюсов и вот некоторые из них.</p>
+            </div>
+
+            <!---->
+            <div class="block_three">
+                <div class="one">
+                    <i class="icon-lampa"></i>
+                    <h3>Креативность</h3>
+                    <p>В процессе работы наши специалисты, смогут выполнить ваш заказ даже лучше, чем вы ожидаете.</p>
+                </div>
+                <div class="two"> <i class="icon-keyboard"></i>
+                    <h3>Квалифицированность</h3>
+                    <p>Только у нас вы встретите лучших мастеров своего дела, так как мы выбираем лучших из лучших. </p>
+                </div>
+                <div class="three"> <i class="icon-molnia"></i>
+                    <h3>Скорость</h3>
+                    <p>Наша компания выполнит ваши заказы в кратчайшие сроки, вы даже не успеете оглянуться, как всё уже будет готово. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing_options" id="prise">
+        <div class="container">
+            <div class="comany">
+                <h2>прайс-лист</h2>
+                <div class="long"></div>
+                <p>Цены на нашу неоновую мечту.</p>
+            </div>
+
+            <!---->
+            <div class="block_three">
+                <div class="one">
+                    <h3>Баннер</h3>
+                    <div class="price">
+                        <p>$5</p>
+                        <span>Цена без учёта скидок и акций</span>
+                    </div>
+                    <div class="dop_long"></div>
+                    <ul>
+                        <li>Можно выбрать 1 цвет свечения</li>
+                        <li>Лента:нет</li>
+                        <li>1 Баннер</li>
+                        <li>базовая настройка</li>
+                        <li>Обычное свечение</li>
+                        <li>поддержка электронной почты</li>
+                    </ul>
+                </div>
+                <div class="two">
+                    <h3>Баннер<span class="plus"> + </span>светодиодная лента</h3>
+                    <div class="price">
+                        <p>$19</p>
+                        <span>Цена без учёта скидок и акций</span>
+                    </div>
+                    <div class="dop_long">наш самый популярный</div>
+                    <ul>
+                        <li>Можно выбрать 3 цвета свечения</li>
+                        <li>Лента:есть</li>
+                        <li>до 4 баннеров</li>
+                        <li>передовая настройка</li>
+                        <li>обычное, мигание, Хамелеон</li>
+                        <li>поддержка электронной почты</li>
+                    </ul>
+                </div>
+                <div class="three">
+                    <h3>Сложный проект</h3>
+                    <div class="price">
+                        <p>$70</p>
+                        <span>Цена без учёта скидок и акций</span>
+                    </div>
+                    <div class="dop_long"></div>
+                    <ul>
+                        <li>Можно выбрать RGB свечение</li>
+                        <li>Лента:неограниченное колличество</li>
+                        <li>Любое количество баннеров</li>
+                        <li>передовая настройка</li>
+                        <li>Настройка любой сложности свечения</li>
+                        <li>24/7 поддержка клиентов</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comments" id="comment">
+        <div class="container">
+            <div class="comments_up">
+                <h2>Отзывы</h2>
+                <div class="comments_long"></div>
+                <p>Отзывы наших последних заказчиков.</p>
+            </div>
+            <div class="three_block">
+                <div class="one">
+                    <p class="comments_text">Покупку неона я обдумывал очень давно. И решил заказать у вас, и не прогадал. Всё было на высшем уровне. Спасибо!!! </p>
+                    <img src="img/jeremi.png" alt="log">
+                    <div class="sms">
+
+                        <h3>Джереми Х.</h3>
+                        <p>Менеджер</p>
+
+                    </div>
+                </div>
+                <div class="two">
+                    <p class="comments_text">Очень всё круто. Заказывал пакет «Сложный проект», для кафе такая красивая получилась барная стойка, просто загляденье. </p>
+                    <img src="img/josh.png" alt="log">
+                    <div class="sms">
+
+                        <h3>Джош С.</h3>
+                        <p>Фрилансер</p>
+
+                    </div>
+                </div>
+                <div class="three">
+                    <p class="comments_text">Очень нравятся неоновые вещи, и я не смогла удержаться и заказала пару неоновых лент, к себе домой.
+                    И вправду пишут, скорость выполнения заказа сумашедшая!</p>
+
+                    <img src="img/suzan.png" alt="log">
+                    <div class="sms">
+
+                        <h3>Сьюзан В.</h3>
+                        <p>Фотограф</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <article class="ponorama">
+        <h2>Стильный дизайн это</h2>
+        <div class="long_white"></div>
+        <p>Эстетическое удовольствие</p>
+    </article>
+    <section class="contact_us" id="contact">
+        <div class="container">
+            <div class="contact_us_up">
+        <h2>контакты</h2>
+        <div class="long_violete"></div>
+        <p>Наша служба поддержки работает круглосуточно, пишите нам в любое время дня и ночи.</p>
+            </div>
+        <div class="contact_us_infa">
+            <div class="left">
+                <form action="#" method="post">
+                    <ul>
+                <li>    <input type="text" name="name" placeholder="Имя" ></li>
+                 <li>   <input type="email" name="Email" placeholder="Email"></li>
+                  <li>  <input type="text" name="Subject" placeholder="Предмет"></li>
+                </ul>
+                </form>
+            </div>
+            <div class="right">
+                <form action="#" method="post">
+<textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                </form>
+
+            </div>
+        </div>
+            <div class="contact_us_knopa">
+                <form action="#" method="POST">
+                    <input type="submit" name="send_message" id="Send">
+                    <label for="Send">Отправить</label>
+                </form>
+            
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <a href="https://www.google.ru/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.google.ru/"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.google.ru/"><i class="fab fa-google-plus-g"></i></a>
+            <a href="https://www.google.ru/"><i class="fab fa-product-hunt"></i></a>
+            <a href="https://www.google.ru/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.google.ru/"> <i class="fas fa-wave-square"></i></a>
+            <a href="https://www.google.ru/"><i class="fas fa-satellite-dish"></i></a>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('a[href*=#]').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                && location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top;
+                        $('html,body').animate({scrollTop: targetOffset}, 500);//скорость прокрутки
+                        return false;
+                    }
+                }
+            });
+        });
+        </script>
+
+</body>
+
+</html>
