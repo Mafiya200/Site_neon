@@ -7,12 +7,15 @@
     <link rel="stylesheet" type="text/css" href="sourse/css/style.css">
     <script src="https://kit.fontawesome.com/a7eb041117.js" crossorigin="anonymous"></script>
     <title>PUNK</title>
+
 </head>
 
 <body>
-    <nav class="nav">
+    <nav class="nav" id="up">
         <div class="container">
-            <div class="logo"></div>
+            <div class="logo">
+                <a href="index.html"></a>
+            </div>
             <div class="top_right">
                 <a href="#features">Особенности</a>
                 <a href="#about_us">О нас</a>
@@ -48,14 +51,14 @@
                         <div class="block_probel_top">
                             <input type="text" name="name_user" placeholder="Имя">
                             <input type="email" name="emaili" placeholder="Email">
-                            <input type="password" name="password_user" placeholder="Пароль">
+                            <input type="text" name="text_ar" placeholder="Сообщение">
                         </div>
                     </form>
                 </div>
                 <div class="block_bottom">
                     <form action="start">
                         <input type="submit" name="start" id="starts">
-                        <label for="starts">Начать</label>
+                        <label for="starts">Отправить</label>
                     </form>
                 </div>
             </div>
@@ -88,16 +91,16 @@
                         <li>
 
                             <input type="radio" name="tab" id="tab_cub_1" checked="" onclick="tab1()">
-                            <label for="tab_cub_1">Пункт 1</label>
+                            <label for="tab_cub_1"><img src="img/2later.png" width="90%" height="100%" alt=""></label>
 
                         </li>
                         <li>
                             <input type="radio" name="tab" id="tab_cub_2" onclick="tab2()">
-                            <label for="tab_cub_2">Пункт 2</label>
+                            <label for="tab_cub_2"><img src="img/mater.png" width="90%" height="100%" alt=""></label>
                         </li>
                         <li>
                             <input type="radio" name="tab" id="tab_cub_3" onclick="tab3()">
-                            <label for="tab_cub_3">Пункт 3</label>
+                            <label for="tab_cub_3"><img class="free" src="img/jobs.png" width="130%" height="130%" alt=""></label>
                         </li>
                     </ul>
                 </form>
@@ -151,8 +154,8 @@
             <div class="imga_text_1">
                 <h2> Полный цикл работ</h2>
                 <div class="long_violete"></div>
-                <div class="up_title"> <i class="icon-up"></i></div>
-                <div class="bottom_title"> <i class="icon-bottomsss"></i></div>
+                <div class="up_title"> <i class="icon-spin1"></i></div>
+                <div class="bottom_title"> <i class="icon-spin1"></i></div>
                 <p>
                     Комплексные услуги по всему миру — приоритет компании «PUNK». Закажите услугу, и мобильная бригада оперативно выедет на замер и произведет все необходимые расчеты в любой точке мира.
                 </p>
@@ -219,7 +222,7 @@
                 <div class="one">
                     <h3>Баннер</h3>
                     <div class="price">
-                        <p>$5</p>
+                        <p>1000<span class="rub">Руб</span></p>
                         <span>Цена без учёта скидок и акций</span>
                     </div>
                     <div class="dop_long"></div>
@@ -235,7 +238,7 @@
                 <div class="two">
                     <h3>Баннер<span class="plus"> + </span>светодиодная лента</h3>
                     <div class="price">
-                        <p>$19</p>
+                        <p>3500<span class="rub">Руб</span></p>
                         <span>Цена без учёта скидок и акций</span>
                     </div>
                     <div class="dop_long">наш самый популярный</div>
@@ -251,7 +254,7 @@
                 <div class="three">
                     <h3>Сложный проект</h3>
                     <div class="price">
-                        <p>$70</p>
+                        <p>9999<span class="rub">Руб</span></p>
                         <span>Цена без учёта скидок и акций</span>
                     </div>
                     <div class="dop_long"></div>
@@ -280,7 +283,7 @@
                     <img src="img/jeremi.png" alt="log">
                     <div class="sms">
 
-                        <h3>Джереми Х.</h3>
+                        <h3>Евгений Х.</h3>
                         <p>Менеджер</p>
 
                     </div>
@@ -290,7 +293,7 @@
                     <img src="img/josh.png" alt="log">
                     <div class="sms">
 
-                        <h3>Джош С.</h3>
+                        <h3>Александр С.</h3>
                         <p>Фрилансер</p>
 
                     </div>
@@ -323,30 +326,34 @@
         <p>Наша служба поддержки работает круглосуточно, пишите нам в любое время дня и ночи.</p>
             </div>
         <div class="contact_us_infa">
+ <form action="sourse/php/send.php" method="POST">
             <div class="left">
-                <form action="#" method="post">
+               
                     <ul>
-                <li>    <input type="text" name="name" placeholder="Имя" ></li>
-                 <li>   <input type="email" name="Email" placeholder="Email"></li>
-                  <li>  <input type="text" name="Subject" placeholder="Предмет"></li>
+                <li>    <input type="text" name="name" placeholder="Имя" required></li>
+                 <li>   <input type="email" name="Email" placeholder="Email" required></li>
+                  <li>  <input type="text" name="Subject" placeholder="Предмет" required></li>
                 </ul>
-                </form>
+                
             </div>
             <div class="right">
-                <form action="#" method="post">
-<textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
-                </form>
+                
+<textarea name="textar" id="" cols="30" rows="10" placeholder="Сообщение" required></textarea>
+                
 
             </div>
+          
         </div>
             <div class="contact_us_knopa">
-                <form action="#" method="POST">
+               
                     <input type="submit" name="send_message" id="Send">
                     <label for="Send">Отправить</label>
                 </form>
             
         </div>
         </div>
+        <div class="up_scrol"> <a href="#up">Вернуться в начало страницы</a></div>
+       
     </section>
     <footer>
         <div class="foot">

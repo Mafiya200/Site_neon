@@ -65,36 +65,7 @@ body {
 .container {
     margin: 0 10.2%;
 }
-    img:hover{
-        transform: scale(1.2,1.2);
-      transition-timing-function: ease-out;
-      transition-duration: 550ms;
-      transform: scale(1.2,1.2);
-      transition-timing-function: ease-out;
-      transition-duration: 550ms;
-      -webkit-transform: scale(1.2,1.2);
-      -webkit-transition-timing-function: ease-out;
-      -webkit-transition-duration: 550ms;
-      -moz-transform: scale(1.2,1.2);
-      -moz-transition-timing-function: ease-out;
-      -moz-transition-duration: 550ms;
-}
-img{
-    display:inline-block;
-  opacity: 1;
-  -webkit-transform: scale(1,1);
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 550ms;
-  -moz-transform: scale(1,1);
-  -moz-transition-timing-function: ease-out;
-  -moz-transition-duration: 550ms;
-  transform: scale(1,1);
-  transition-timing-function: ease-out;
-  transition-duration: 550ms;
-  transform: scale(1,1);
-  transition-timing-function: ease-out;
-  transition-duration: 550ms;
-}
+ 
 //навигация
 nav {
     @include block(70px, #000000);
@@ -103,12 +74,16 @@ nav {
 
     //картинка
     .logo {
-        background     : url(../../img/Logo.png) no-repeat;
+
+        a{
+            background     : url(../../img/Logo.png) no-repeat;
         width          : 7.3%;
         margin-top     : 20px;
+        margin-left: 0;
         float          : left;
-        height         : 40px;
+        height         : 33px;
         background-size: 100%;
+        }
     }
 
     //cсылки все а
@@ -339,6 +314,9 @@ section.tabs {
             border          : 1px solid $colorwhite;
             height          : 109px;
             cursor          : pointer;
+            .free{
+                margin: -15px 0px 0px -13px;
+            }
         }
 
         label:hover,
@@ -406,6 +384,36 @@ section.Sub_list {
                 width : 100%;
                 height: 304px;
             }
+            img:hover{
+                transform: scale(1.2,1.2);
+              transition-timing-function: ease-out;
+              transition-duration: 550ms;
+              transform: scale(1.2,1.2);
+              transition-timing-function: ease-out;
+              transition-duration: 550ms;
+              -webkit-transform: scale(1.2,1.2);
+              -webkit-transition-timing-function: ease-out;
+              -webkit-transition-duration: 550ms;
+              -moz-transform: scale(1.2,1.2);
+              -moz-transition-timing-function: ease-out;
+              -moz-transition-duration: 550ms;
+        }
+        img{
+            display:inline-block;
+          opacity: 1;
+          -webkit-transform: scale(1,1);
+          -webkit-transition-timing-function: ease-out;
+          -webkit-transition-duration: 550ms;
+          -moz-transform: scale(1,1);
+          -moz-transition-timing-function: ease-out;
+          -moz-transition-duration: 550ms;
+          transform: scale(1,1);
+          transition-timing-function: ease-out;
+          transition-duration: 550ms;
+          transform: scale(1,1);
+          transition-timing-function: ease-out;
+          transition-duration: 550ms;
+        }
         }
 
         .imga_text_1 {
@@ -519,6 +527,36 @@ section.Sub_list {
                 width : 100%;
                 height: 304px;
             }
+            img:hover{
+                transform: scale(1.2,1.2);
+              transition-timing-function: ease-out;
+              transition-duration: 550ms;
+              transform: scale(1.2,1.2);
+              transition-timing-function: ease-out;
+              transition-duration: 550ms;
+              -webkit-transform: scale(1.2,1.2);
+              -webkit-transition-timing-function: ease-out;
+              -webkit-transition-duration: 550ms;
+              -moz-transform: scale(1.2,1.2);
+              -moz-transition-timing-function: ease-out;
+              -moz-transition-duration: 550ms;
+        }
+        img{
+            display:inline-block;
+          opacity: 1;
+          -webkit-transform: scale(1,1);
+          -webkit-transition-timing-function: ease-out;
+          -webkit-transition-duration: 550ms;
+          -moz-transform: scale(1,1);
+          -moz-transition-timing-function: ease-out;
+          -moz-transition-duration: 550ms;
+          transform: scale(1,1);
+          transition-timing-function: ease-out;
+          transition-duration: 550ms;
+          transform: scale(1,1);
+          transition-timing-function: ease-out;
+          transition-duration: 550ms;
+        }
         }
     }
 }
@@ -645,11 +683,13 @@ section.Sub_list {
             p {
                 @include font($ral, 700, none);
                 font-size: 100px;
+           span.rub{
+               font-size: 40px;
+           }
+           
             }
 
-            p:first-letter {
-                font-size: 40px;
-            }
+           
 
             span {
                 display: inline-block;
@@ -746,6 +786,36 @@ section.Sub_list {
                 position     : absolute;
                 top          : 155px;
             }
+            img:hover{
+                transform: scale(1.2,1.2);
+              transition-timing-function: ease-out;
+              transition-duration: 550ms;
+              transform: scale(1.2,1.2);
+              transition-timing-function: ease-out;
+              transition-duration: 550ms;
+              -webkit-transform: scale(1.2,1.2);
+              -webkit-transition-timing-function: ease-out;
+              -webkit-transition-duration: 550ms;
+              -moz-transform: scale(1.2,1.2);
+              -moz-transition-timing-function: ease-out;
+              -moz-transition-duration: 550ms;
+        }
+        img{
+            display:inline-block;
+          opacity: 1;
+          -webkit-transform: scale(1,1);
+          -webkit-transition-timing-function: ease-out;
+          -webkit-transition-duration: 550ms;
+          -moz-transform: scale(1,1);
+          -moz-transition-timing-function: ease-out;
+          -moz-transition-duration: 550ms;
+          transform: scale(1,1);
+          transition-timing-function: ease-out;
+          transition-duration: 550ms;
+          transform: scale(1,1);
+          transition-timing-function: ease-out;
+          transition-duration: 550ms;
+        }
 
             .comments_text {
                 display: block;
@@ -819,7 +889,6 @@ section.Sub_list {
 
 .contact_us {
     height: 612px;
-
     .contact_us_up {
         margin-top: 108px;
         text-align: center;
@@ -902,6 +971,16 @@ section.Sub_list {
             cursor          : pointer;
         }
     }
+    .up_scrol {
+        text-align: center;
+        padding-top:70px;
+        a{
+            color: $colviol;
+          
+        }
+    } a:hover{
+            border-bottom:2px solid $colviol;
+           }
 }
 
 footer {
