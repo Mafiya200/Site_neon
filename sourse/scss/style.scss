@@ -986,11 +986,13 @@ section.Sub_list {
 footer {
     height          : 81px;
     background-color: #000000;
-
+   
     .foot {
+        width: 100%;
     padding-top: 21px ;
         text-align: center;
         font-size: 30px;
+      
         a {
             color: $colgray;
             padding:0 0 0 2.1% ;
@@ -999,4 +1001,39 @@ footer {
             }
         }
     }
+}
+
+.gallary{
+    background-color: $colorwhite;
+    height: 1050px;
+    border-top: 2px solid $colviol;
+    border-bottom: 2px solid $colviol;
+    img{
+        margin: 5px;
+    }
+    .gallary_up {
+        padding    : 108px 0 0 0;
+        text-align: center;
+
+        h2 {
+            text-transform: uppercase;
+            @include font($ral, 400, none);
+            font-size: 36px;
+        }
+
+        p {
+            color: $colgray;
+        }
+
+        .comments_long {
+            display: inline-block;
+            @extend %long_violet;
+        }
+    }
+    .img_gallary{
+        margin-top: 70px;
+        text-align: center;
+       
+    }
+
 }
