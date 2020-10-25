@@ -11,7 +11,11 @@
     font-weight: normal;
     font-style : normal;
 }
-
+html, body, div, dl, dt, dd, ul, li, h1, h2, h3, h4, pre, form, fieldset, p, blockquote, th, td, img, a {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
 //
 $colviol   :#d900ff;
 $col33     :#333333;
@@ -58,10 +62,8 @@ body {
     width    : 1400px;
     max-width: 1400px;
     @include font($os, 400, none);
-    margin: 0 auto;
-
+   margin: 0 auto;  
 }
-
 .container {
     margin: 0 10.2%;
 }
@@ -1008,8 +1010,9 @@ footer {
     height: 1050px;
     border-top: 2px solid $colviol;
     border-bottom: 2px solid $colviol;
+    text-align: center;
     img{
-        margin: 5px;
+        margin: 5px;  
     }
     .gallary_up {
         padding    : 108px 0 0 0;
@@ -1033,7 +1036,7 @@ footer {
     .img_gallary{
         margin-top: 70px;
         text-align: center;
-       
+     
     }
 
 }
