@@ -1030,6 +1030,7 @@ padding-bottom:35px;
 }
 
 .gallary{
+    
     background-color: $colorwhite;
     height: 1275px;
     border-top: 2px solid $colviol;
@@ -1042,7 +1043,7 @@ padding-bottom:35px;
 box-shadow: 0px 0px 5px 5px $colviol;
     }
     .gallary_up {
-        padding    : 108px 0 0 0;
+        padding    : 108px 0 20px 0;
         text-align: center;
 
         h2 {
@@ -1061,11 +1062,55 @@ box-shadow: 0px 0px 5px 5px $colviol;
         }
     }
     .img_gallary{
-        margin-top: 70px;
+ 
+        margin-top: 10px;
         text-align: center;
         
      
     }
 
 }
-.fot{}
+.up-button {
+    background: rgba($color: #fff, $alpha: 0);
+    font-size: 50px;
+    font-weight: 700;
+  border: 5px solid $colviol;
+    color: $colviol;
+    z-index: 100;
+position: fixed;
+bottom: 0;
+right: 0;
+border-radius: 50%;
+height: 13%;
+width: 6.5%;
+text-align: center;
+vertical-align: top;
+opacity: 0;
+}
+.up-button.shown{
+    opacity: 1;
+}
+.upping {
+}
+.filter{
+    text-align: left;
+padding-left: 0px;
+.list_opt{
+    background: $colviol;
+    border-radius: 1px;
+    padding: 10px;
+    @include font($os,700 ,none);
+    color: white;
+    font-size: 18px;
+    option{
+        background: rebeccapurple;
+    
+    }
+
+}
+}
+.expansion{
+    border: 4px dashed red;
+    display: none;
+    
+}
