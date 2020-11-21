@@ -1078,29 +1078,36 @@ box-shadow: 0px 0px 5px 5px $colviol;
     color: $colviol;
     z-index: 100;
 position: fixed;
-bottom: 0;
-right: 0;
+bottom: 3.5%;
+right: 1%;
 border-radius: 50%;
-height: 13%;
-width: 6.5%;
+height: 110px;
+width: 100px;
 text-align: center;
 vertical-align: top;
 opacity: 0;
+
 }
 .up-button.shown{
     opacity: 1;
+
 }
+.shown:hover{
+color: rebeccapurple;
+border: 5px solid rebeccapurple;
+}
+
 .upping {
 }
 .filter{
     text-align: left;
 padding-left: 0px;
 .list_opt{
-    background: $colviol;
+    background: black;
     border-radius: 1px;
     padding: 10px;
     @include font($os,700 ,none);
-    color: white;
+    color:white;
     font-size: 18px;
     option{
         background: rebeccapurple;
@@ -1110,7 +1117,7 @@ padding-left: 0px;
 }
 }
 .expansion{
-    border: 4px dashed red;
+  
     display: none;
     
 }
