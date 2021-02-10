@@ -125,11 +125,16 @@ nav {
     a:hover {
         border-bottom: 2px solid $colviol;
     }
+    a:active{
+        color: #d900ff;
+        border-bottom: 2px solid #b0b0b0;;
+    }
 
     .top_right {
         box-sizing: border-box;
         text-align: right;
     }
+  
 }
 
 //первый серый блок
@@ -255,6 +260,14 @@ nav {
                     border-radius: 0 0 5px 5px;
                     line-height  : 54px;
                 }
+                input+label:hover{
+                    background-color: #761288;
+                    color: rgba($color: white, $alpha: 0.9);
+                }
+                input+label:active{
+                   background: rgb(175, 149, 173); 
+                   color: rgb(165, 77, 165);
+                }
             }
         }
     }
@@ -350,6 +363,7 @@ section.tabs {
 
         input+label {
             margin-top: 10px;
+
 
         }
 
@@ -985,12 +999,14 @@ section.Sub_list {
         border-bottom : 2px solid $colgray;
         vertical-align: top;
         width         : 47.2%;
+        
 
 
         textarea {
             width : 100%;
-            height: 139px;
+            height: 137px;
             resize: none;
+            font-size: 16px;
         }
     }
 
@@ -1012,6 +1028,16 @@ section.Sub_list {
             border-radius   : 3px;
             line-height     : 44px;
             cursor          : pointer;
+            font-weight: 600;
+        }
+        input+label:hover{
+            background-color: #761288;
+            color: rgba($color: white, $alpha: 1.0);
+
+        }
+        input+label:active{
+           background: rgb(175, 149, 173); 
+           color: rgb(165, 77, 165);
         }
     }
 
@@ -1026,7 +1052,11 @@ section.Sub_list {
     }
 
     a:hover {
-        border-bottom: 2px solid $colviol;
+        border-bottom: 2px solid #b0b0b0;
+    }
+    a:active{
+        color:#b0b0b0 ;
+        border-bottom: 2px solid $colviol;;
     }
 }
 
