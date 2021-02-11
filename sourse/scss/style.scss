@@ -111,30 +111,51 @@ nav {
             height: 33px;
             background-size: 100%;
         }
+        a:hover {
+           
+            border-bottom: 2px solid $colviol;
+            letter-spacing: 5px;
+            transition: 0.1s;
+        }
+        a:active {
+            color: #d900ff;
+            border-bottom: 2px solid #b0b0b0;
+        }
     }
 
-    //cсылки все а
+    
+    .top_right {
+        box-sizing: border-box;
+        text-align: right;
+
+       //cсылки все а
     a {
         color: #b0b0b0;
         list-style: none;
         margin: 0 0px 0 50px;
         line-height: 70px;
         @include font($os, 600, none);
+        transition: 0.05s;
+        letter-spacing: 0;
+        max-width: 100px;
     }
 
     a:hover {
+        border-top: 2px solid $colviol;
         border-bottom: 2px solid $colviol;
+        letter-spacing: 5px;
+        transition: 0.3s;
+        padding: 5px;
     }
     a:active {
         color: #d900ff;
         border-bottom: 2px solid #b0b0b0;
+        border-top: 2px solid #b0b0b0;
     }
-
-    .top_right {
-        box-sizing: border-box;
-        text-align: right;
+ 
     }
 }
+
 
 //первый серый блок
 .header {
@@ -1015,6 +1036,7 @@ section.Sub_list {
             background: rgb(175, 149, 173);
             color: rgb(165, 77, 165);
         }
+        
     }
 
     .up_scrol {
