@@ -509,6 +509,7 @@ section.Sub_list {
                 display: inline-block;
                 font-size: 50px;
                 color: $colviol;
+              
             }
 
             .up_title {
@@ -527,6 +528,8 @@ section.Sub_list {
             i:hover {
                 color: $colgray;
                 cursor: pointer;
+                display: inline-block;
+                
             }
         }
     }
@@ -539,6 +542,40 @@ section.Sub_list {
         border-bottom: 3px solid $colviol;
     }
 }
+.bottom_title{
+    animation-name: violet-notcrug;
+    animation-duration: 3000s;
+                animation-iteration-count: infinite;
+                animation-delay: -1s;
+}
+
+.up_title{
+    animation-name: violet-crug;
+                animation-duration: 3000s;
+                animation-iteration-count: infinite;
+               animation-delay: -1s;
+}
+
+@keyframes violet-crug{
+    0%{
+transform: rotate(0deg);
+    }
+    100%{
+transform: rotate(518400deg);
+    }
+}
+
+@keyframes violet-notcrug {
+    0%{
+        transform: rotate(0deg);
+            }
+            100%{
+        transform: rotate(-518400deg);
+            }      
+}
+
+
+
 
 //@extend
 .standard_pictures {
@@ -1180,10 +1217,12 @@ footer {
     text-align: center;
     vertical-align: top;
     opacity: 0;
+    
 }
 
 .up-button.shown {
     opacity: 1;
+    
 }
 
 .shown:hover {
