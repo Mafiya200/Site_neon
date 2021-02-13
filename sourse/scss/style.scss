@@ -267,24 +267,23 @@ nav {
 
                 input + label {
                     display: block;
-                    background-color: $colviol;
+                    background:linear-gradient(to left, rebeccapurple,coral,rebeccapurple) ;
+                    background-size: 200%;
                     text-align: center;
-                    border-radius: 0px 0px 3px 3px;
+                   
                     @include font($os, 600, none);
                     cursor: pointer;
                     height: 54px;
                     width: 100%;
                     border-radius: 0 0 5px 5px;
                     line-height: 54px;
+                    transition: 0.5s;  
                 }
                 input + label:hover {
-                    background-color: #761288;
-                    color: rgba($color: white, $alpha: 0.9);
+                    
+                    background-position: right;
                 }
-                input + label:active {
-                    background: rgb(175, 149, 173);
-                    color: rgb(165, 77, 165);
-                }
+                
             }
         }
     }
@@ -543,17 +542,11 @@ section.Sub_list {
     }
 }
 .bottom_title{
-    animation-name: violet-notcrug;
-    animation-duration: 3000s;
-                animation-iteration-count: infinite;
-                animation-delay: -1s;
+    animation:violet-notcrug 5s infinite linear;
 }
 
 .up_title{
-    animation-name: violet-crug;
-                animation-duration: 3000s;
-                animation-iteration-count: infinite;
-               animation-delay: -1s;
+    animation:violet-crug 4s infinite linear;
 }
 
 @keyframes violet-crug{
@@ -561,7 +554,7 @@ section.Sub_list {
 transform: rotate(0deg);
     }
     100%{
-transform: rotate(518400deg);
+transform: rotate(360deg);
     }
 }
 
@@ -570,7 +563,7 @@ transform: rotate(518400deg);
         transform: rotate(0deg);
             }
             100%{
-        transform: rotate(-518400deg);
+        transform: rotate(-360deg);
             }      
 }
 
@@ -1170,6 +1163,7 @@ footer {
 
     img:hover {
         box-shadow: 0px 0px 5px 5px $colviol;
+        transition: 0.3s;
     }
 
     .gallary_up {
