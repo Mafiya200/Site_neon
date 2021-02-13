@@ -115,7 +115,7 @@ nav {
            
             border-bottom: 2px solid $colviol;
             letter-spacing: 5px;
-            transition: 0.1s;
+            transition: 0.07s;
         }
         a:active {
             color: #d900ff;
@@ -144,7 +144,7 @@ nav {
         border-top: 2px solid $colviol;
         border-bottom: 2px solid $colviol;
         letter-spacing: 5px;
-        transition: 0.3s;
+        transition: 0.10s;
         padding: 5px;
     }
     a:active {
@@ -283,7 +283,9 @@ nav {
                     
                     background-position: right;
                 }
-                
+                input + label:active {
+                    background-position: left;
+                }
             }
         }
     }
@@ -567,9 +569,6 @@ transform: rotate(360deg);
             }      
 }
 
-
-
-
 //@extend
 .standard_pictures {
     @include block(525px, $colgre6);
@@ -688,10 +687,39 @@ transform: rotate(360deg);
             height: 205px;
 
             i:hover {
-                color: $colgray;
                 cursor: pointer;
             }
+            i:hover {
+                transform: scale(1.2, 1.2);
+                transition-timing-function: ease-out;
+                transition-duration: 550ms;
+                transform: scale(1.2, 1.2);
+                transition-timing-function: ease-out;
+                transition-duration: 550ms;
+                -webkit-transform: scale(1.2, 1.2);
+                -webkit-transition-timing-function: ease-out;
+                -webkit-transition-duration: 550ms;
+                -moz-transform: scale(1.2, 1.2);
+                -moz-transition-timing-function: ease-out;
+                -moz-transition-duration: 550ms;
+            }
 
+            i {
+                display: inline-block;
+                opacity: 1;
+                -webkit-transform: scale(1, 1);
+                -webkit-transition-timing-function: ease-out;
+                -webkit-transition-duration: 550ms;
+                -moz-transform: scale(1, 1);
+                -moz-transition-timing-function: ease-out;
+                -moz-transition-duration: 550ms;
+                transform: scale(1, 1);
+                transition-timing-function: ease-out;
+                transition-duration: 550ms;
+                transform: scale(1, 1);
+                transition-timing-function: ease-out;
+                transition-duration: 550ms;
+            }
             h3 {
                 font-size: 20px;
                 color: $col33;
@@ -1047,24 +1075,40 @@ transform: rotate(360deg);
         }
 
         input + label {
+            
             display: inline-block;
-            height: 44px;
+            height: 50px;
             width: 13.1%;
             background-color: $colviol;
+            background:linear-gradient(to left, $colviol,coral,rebeccapurple) ;
+        background-size: 200%;
             color: $colorwhite;
             vertical-align: middle;
             border-radius: 3px;
-            line-height: 44px;
+            line-height: 50px;
             cursor: pointer;
             font-weight: 600;
+            transition: 0.5s;
+            
         }
+        
         input + label:hover {
-            background-color: #761288;
-            color: rgba($color: white, $alpha: 1);
+           background-position: right;
+           transition: 0s;
+           
         }
-        input + label:active {
-            background: rgb(175, 149, 173);
-            color: rgb(165, 77, 165);
+        input + label:hover.fourth{
+            box-shadow: 0 5px 0px 0 grey;
+          
+            transition: 0.1s;
+           
+           
+        }
+        input + label:active.fourth{
+            position: relative;
+top: 7px;
+transition: 0s;
+box-shadow: 0 0px 0px 0 grey;
         }
         
     }
