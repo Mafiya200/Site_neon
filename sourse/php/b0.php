@@ -28,7 +28,7 @@ $address="dracon.24041250@mail.ru";
 $note_textar="Тема :  \r\nИмя : $name \r\n Email : $Email \r\n Дополнительная информация : $textar";
 
 if (isset($name)  &&  isset ($send_message) ) {
-mail($address,,$note_textar,"Content-type:textar/plain; windows-1251"); 
+mail($address,$note_textar,"Content-type:textar/plain; windows-1251"); 
 // сообщение после отправки формы
     
 echo "<p style='color:green;'>Уважаемый(ая) <b style='color:red;'>$name</b> Ваше письмо отправленно успешно. <br> Спасибо. <br>Вам скоро ответят на почту <b style='color:red;'> $Email</b>.</p>";

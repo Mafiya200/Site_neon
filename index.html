@@ -16,18 +16,10 @@
     <nav class="nav" id="up">
         <div class="container">
             <div class="logo">
-                <a  href="index.html"></a>
+                <a href="index.html"></a>
             </div>
             <div class="top_right">
-
-
-
-
                 <a class="btnfos btnfos-2" href="#features">Особенности</a>
-
-
-
-
                 <a href="#about_us">О нас</a>
                 <a href="#prise">Прайс</a>
                 <a href="#comment">Отзывы</a>
@@ -357,34 +349,37 @@
     <section class="contact_us" id="contact">
         <div class="container">
             <div class="contact_us_up">
-                <h2>контакт</h2>
+                <h2>контакты</h2>
                 <div class="long_violete"></div>
                 <p>Наша служба поддержки работает круглосуточно, пишите нам в любое время дня и ночи.</p>
             </div>
             <div class="contact_us_infa">
+
                 <form action="sourse/php/b0.php" method="POST" target="_blank">
-                    <div class="left">
+                    <div class="contact__wrapers">
+                        <div class="left">
 
-                        <ul>
-                            <li> <input type="text" name="name" placeholder="Имя" required></li>
-                            <li> <input type="email" name="Email" placeholder="Email" required></li>
-                            <li> <input type="text" name="Subject" placeholder="Предмет" required></li>
-                        </ul>
 
+                            <input type="text" name="name" placeholder="Имя" required>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <input type="text" name="Subject" placeholder="Тема" required>
+
+
+                        </div>
+                        <div class="right">
+
+                            <textarea name="textar" id="" cols="30" rows="10" placeholder="Сообщение"
+                                required></textarea>
+
+
+                        </div>
                     </div>
-                    <div class="right">
-
-                        <textarea name="textar" id="" cols="30" rows="10" placeholder="Сообщение" required></textarea>
-
-
-                    </div>
-
             </div>
             <div class="contact_us_knopa">
-                
+
                 <input type="submit" name="send_message" id="Send">
                 <label class="fourth" for="Send">Отправить</label>
-            
+
                 </form>
 
             </div>

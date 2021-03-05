@@ -112,7 +112,6 @@ nav {
             background-size: 100%;
         }
         a:hover {
-           
             border-bottom: 2px solid $colviol;
             letter-spacing: 5px;
             transition: 0.07s;
@@ -123,39 +122,36 @@ nav {
         }
     }
 
-    
     .top_right {
         box-sizing: border-box;
         text-align: right;
 
-       //cсылки все а
-    a {
-        color: #b0b0b0;
-        list-style: none;
-        margin: 0 0px 0 50px;
-        line-height: 70px;
-        @include font($os, 600, none);
-        transition: 0.05s;
-        letter-spacing: 0;
-        max-width: 100px;
-    }
+        //cсылки все а
+        a {
+            color: #b0b0b0;
+            list-style: none;
+            margin: 0 0px 0 50px;
+            line-height: 70px;
+            @include font($os, 600, none);
+            transition: 0.05s;
+            letter-spacing: 0;
+            max-width: 100px;
+        }
 
-    a:hover {
-        border-top: 2px solid $colviol;
-        border-bottom: 2px solid $colviol;
-        letter-spacing: 5px;
-        transition: 0.10s;
-        padding: 5px;
-    }
-    a:active {
-        color: #d900ff;
-        border-bottom: 2px solid #b0b0b0;
-        border-top: 2px solid #b0b0b0;
-    }
- 
+        a:hover {
+            border-top: 2px solid $colviol;
+            border-bottom: 2px solid $colviol;
+            letter-spacing: 5px;
+            transition: 0.1s;
+            padding: 5px;
+        }
+        a:active {
+            color: #d900ff;
+            border-bottom: 2px solid #b0b0b0;
+            border-top: 2px solid #b0b0b0;
+        }
     }
 }
-
 
 //первый серый блок
 .header {
@@ -267,20 +263,19 @@ nav {
 
                 input + label {
                     display: block;
-                    background:linear-gradient(to left, rebeccapurple,coral,rebeccapurple) ;
+                    background: linear-gradient(to left, rebeccapurple, coral, rebeccapurple);
                     background-size: 200%;
                     text-align: center;
-                   
+
                     @include font($os, 600, none);
                     cursor: pointer;
                     height: 54px;
                     width: 100%;
                     border-radius: 0 0 5px 5px;
                     line-height: 54px;
-                    transition: 0.5s;  
+                    transition: 0.5s;
                 }
                 input + label:hover {
-                    
                     background-position: right;
                 }
                 input + label:active {
@@ -495,8 +490,6 @@ section.Sub_list {
                     padding-bottom: 40px;
                     color: $colgray;
                     line-height: 20px;
-
-                   
                 }
             }
 
@@ -510,27 +503,25 @@ section.Sub_list {
                 display: inline-block;
                 font-size: 50px;
                 color: $colviol;
-              
             }
 
             .up_title {
                 position: absolute;
                 left: 0;
                 top: 225px;
-                
             }
 
             .bottom_title {
                 position: absolute;
                 left: 0;
-                top: 315px;border-radius: 2px solid red;
+                top: 315px;
+                border-radius: 2px solid red;
             }
 
             i:hover {
                 color: $colgray;
                 cursor: pointer;
                 display: inline-block;
-                
             }
         }
     }
@@ -543,30 +534,30 @@ section.Sub_list {
         border-bottom: 3px solid $colviol;
     }
 }
-.bottom_title{
-    animation:violet-notcrug 5s infinite linear;
+.bottom_title {
+    animation: violet-notcrug 5s infinite linear;
 }
 
-.up_title{
-    animation:violet-crug 4s infinite linear;
+.up_title {
+    animation: violet-crug 4s infinite linear;
 }
 
-@keyframes violet-crug{
-    0%{
-transform: rotate(0deg);
+@keyframes violet-crug {
+    0% {
+        transform: rotate(0deg);
     }
-    100%{
-transform: rotate(360deg);
+    100% {
+        transform: rotate(360deg);
     }
 }
 
 @keyframes violet-notcrug {
-    0%{
+    0% {
         transform: rotate(0deg);
-            }
-            100%{
+    }
+    100% {
         transform: rotate(-360deg);
-            }      
+    }
 }
 
 //@extend
@@ -1031,41 +1022,39 @@ transform: rotate(360deg);
         margin-top: 85px;
         width: 100%;
         height: 143px;
-    }
+        .contact__wrapers {
+            display: flex;
+            justify-content: space-between;
+           height: 143px;
+            .left {
+                width: 47.2%;
+                
+    height: 100%;
 
-    .left {
-        position: absolute;
-        display: inline-block;
-        width: 47.2%;
-
-        input {
-            font-size: 18px;
-            width: 100%;
-        }
-
-        ul {
-            li {
-                border-bottom: 2px solid $colgray;
-                font-size: 45px;
+                input {
+                    font-size: 22px;
+                  vertical-align: bottom;
+                    width: 100%;
+                    height: 33.33333%;
+                    border-bottom: 3px solid #9a9a9a;
+                    
+                }
+            }
+    
+            .right {
+                width: 49.2%;
+    
+                textarea {
+                    width: 100%;
+                    height: 100%;
+                    resize: none;
+                    font-size: 19px;
+                    
+                    border-bottom: 3px solid #9a9a9a;
+                }
             }
         }
     }
-
-    .right {
-        position: absolute;
-        right: 0;
-        border-bottom: 2px solid $colgray;
-        vertical-align: top;
-        width: 47.2%;
-
-        textarea {
-            width: 100%;
-            height: 137px;
-            resize: none;
-            font-size: 16px;
-        }
-    }
-
     .contact_us_knopa {
         margin-top: 42px;
         text-align: center;
@@ -1075,13 +1064,12 @@ transform: rotate(360deg);
         }
 
         input + label {
-            
             display: inline-block;
             height: 50px;
             width: 13.1%;
             background-color: $colviol;
-            background:linear-gradient(to left, $colviol,coral,rebeccapurple) ;
-        background-size: 200%;
+            background: linear-gradient(to left, $colviol, coral, rebeccapurple);
+            background-size: 200%;
             color: $colorwhite;
             vertical-align: middle;
             border-radius: 3px;
@@ -1089,28 +1077,23 @@ transform: rotate(360deg);
             cursor: pointer;
             font-weight: 600;
             transition: 0.5s;
-            
         }
-        
+
         input + label:hover {
-           background-position: right;
-           transition: 0s;
-           
+            background-position: right;
+            transition: 0s;
         }
-        input + label:hover.fourth{
+        input + label:hover.fourth {
             box-shadow: 0 5px 0px 0 grey;
-          
+
             transition: 0.1s;
-           
-           
         }
-        input + label:active.fourth{
+        input + label:active.fourth {
             position: relative;
-top: 7px;
-transition: 0s;
-box-shadow: 0 0px 0px 0 grey;
+            top: 7px;
+            transition: 0s;
+            box-shadow: 0 0px 0px 0 grey;
         }
-        
     }
 
     .up_scrol {
@@ -1255,12 +1238,10 @@ footer {
     text-align: center;
     vertical-align: top;
     opacity: 0;
-    
 }
 
 .up-button.shown {
     opacity: 1;
-    
 }
 
 .shown:hover {
