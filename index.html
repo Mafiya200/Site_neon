@@ -49,18 +49,28 @@
                     <h2>Прочуствуй <span>неон</span> Уже Сегодня</h2>
                 </div>
                 <div class="inputs">
-                    <form action="sourse/php/mail.php" method="POST">
+                    <form action="sourse/php/b0.php" method="POST">
                         <div class="block_probel_top">
-                            <input type="text" name="name_user" placeholder="Имя">
-                            <input type="email" name="emaili" placeholder="Email">
-                            <input type="text" name="text_ar" placeholder="Сообщение">
+                            <input type="text" name="name" placeholder="Имя" required>
+                            <input type="email" name="Email" placeholder="Email" required>
+                            <input type="text" name="textar" placeholder="Сообщение" required>
+                            
+
+
                         </div>
-                    </form>
+                    
                 </div>
                 <div class="block_bottom">
-                    <form action="sourse/php/mail.php" method="POST">
-                        <input type="submit" name="start" id="starts">
-                        <label for="starts">Отправить</label>
+                  
+                        <input type="submit" name="send_message" id="Send">
+                        <label for="Send">Отправить</label>
+
+
+                       
+        
+
+
+
                     </form>
                 </div>
             </div>
@@ -362,7 +372,7 @@
 
                             <input type="text" name="name" placeholder="Имя" required>
                             <input type="email" name="Email" placeholder="Email" required>
-                            <input type="text" name="Subject" placeholder="Тема" required>
+                            <input type="text" name="send_message" placeholder="Тема" required>
 
 
                         </div>
